@@ -1,5 +1,8 @@
 :root {
+    --body-content-width: 75%;
+
     --letter-spacing-val: 15px;
+
     --font-weight-lighter: lighter;
     --font-family: "BunueloCleanPro-Light";
     --font-family-para: "Roboto";

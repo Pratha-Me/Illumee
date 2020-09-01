@@ -1,9 +1,25 @@
 @import url("./constant.css");
 
+html{
+    background-color: black;
+}
+
+body{
+    width: var(--body-content-width);
+    margin: auto;
+    background-color: white;
+}
+
+.intro {
+    background-image: url('../images/Group\ 991.png');
+    height: 348px;
+}
+
 .intro .brand {
     font-family: var(--font-family-para);
     font-weight: var(--font-weight-lighter);
     text-align: left;
+    color: white;
     padding-left: 50px;
 }
 
@@ -15,12 +31,18 @@
     letter-spacing: var(--letter-spacing-val);
     font-family: var(--font-family);
     font-weight: var(--font-weight-lighter);
+    color: white;
     margin-bottom: 30px;
 }
 .intro p {
     font-family: var(--font-family-para);
     font-weight: var(--font-weight-lighter);
+    color: white;
     font-size: 12px;
+}
+
+p.last-p {
+    font-weight: bold;
 }
 
 .intro input {
