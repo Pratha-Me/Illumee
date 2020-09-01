@@ -1,62 +1,120 @@
 @import url("./constant.css");
 
 html{
+    z-index: -1;
     background-color: black;
 }
 
 body{
+    margin: 0px auto;
+    padding: 0px;
     width: var(--body-content-width);
-    margin: auto;
+    font-size: var(--font-size-para);
     background-color: white;
 }
 
-.intro {
+/* Top section starts */
+.intro-heading {
     background-image: url('../images/Group\ 991.png');
-    height: 348px;
+    background-size: cover;
 }
 
-.intro .brand {
+.intro-heading .brand {
     font-family: var(--font-family-para);
     font-weight: var(--font-weight-lighter);
+    font-size: 1.5rem;
     text-align: left;
     color: white;
-    padding-left: 50px;
+    margin: 0px auto;
+    padding-top: 1rem;
+    padding-left: 3.5rem;
 }
 
-.intro .brand > span {
+.intro-heading .brand > span {
     color: var(--text-color-red1);
 }
 
-.intro .heading {
+.intro-heading .heading {
     letter-spacing: var(--letter-spacing-val);
     font-family: var(--font-family);
     font-weight: var(--font-weight-lighter);
+    font-size: 3rem;
+    text-align: center;
     color: white;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 1.25rem;
 }
-.intro p {
+
+.intro-heading p {
     font-family: var(--font-family-para);
     font-weight: var(--font-weight-lighter);
+    text-align: center;
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 p.last-p {
+    text-align: center;
     font-weight: bold;
+    padding-bottom: 1.5rem;
 }
 
-.intro input {
-    width: 278px;
+div.input-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.input-div input {
     font-family: var(--font-family-para);
-    font-size: 12px;
-    padding-left: 10px;
+    width: 240px;
+    height: 22px;
+    font-size: 0.75rem;
+    padding-left: 1rem;
 }
 
-.intro button {
+.intro-heading button {
     background-color: var(--text-color-red2);
     border: none;
     width: 72px;
-    height: 24px;
+    height: 31px;
     color: white;
     font-weight: unset;
 }
+/* Top section ends */
+
+/* Body (What is Illumee?) starts */
+.illumee-body .body-heading {
+    font-family: var(--font-family-para);
+    font-weight: normal;
+    color: var(--text-color-red2);
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 2.75rem;
+}
+
+.illumee-body .flex-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.5rem;
+}
+
+.flex-div{
+    background-color: var(--bg-color-grey);
+}
+
+.flex-div .image-resize {
+    width: 35%;
+    height: 185px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.flex-div .flex-p {
+    width: 55%;
+    font-family: var(--font-family-para);
+    font-weight: lighter;
+    text-align: left;
+}
+/* Body (What is Illumee?) ends */
