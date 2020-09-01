@@ -1,0 +1,40 @@
+@import url("./constant.css");
+
+.intro .brand {
+    font-family: var(--font-family-para);
+    font-weight: var(--font-weight-lighter);
+    text-align: left;
+    padding-left: 50px;
+}
+
+.intro .brand > span {
+    color: var(--text-color-red1);
+}
+
+.intro .heading {
+    letter-spacing: var(--letter-spacing-val);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-lighter);
+    margin-bottom: 30px;
+}
+.intro p {
+    font-family: var(--font-family-para);
+    font-weight: var(--font-weight-lighter);
+    font-size: 12px;
+}
+
+.intro input {
+    width: 278px;
+    font-family: var(--font-family-para);
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.intro button {
+    background-color: var(--text-color-red2);
+    border: none;
+    width: 72px;
+    height: 24px;
+    color: white;
+    font-weight: unset;
+}
