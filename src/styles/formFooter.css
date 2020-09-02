@@ -1,7 +1,7 @@
 .formComp {
     background-image: url("../images/Group\ 992.png");
     background-size: contain;
-    padding-bottom: 50px;
+    padding-bottom: 1rem;
 }
 
 .formComp h1 {
@@ -58,4 +58,17 @@
     width: 20%;
     height: 2rem;
     border: 1px solid white ;
+}
+
+.formComp .footnotes {
+    width: 55%;
+    margin: auto;
+    font-family: var(--font-family-para);
+    font-weight: 300;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.footnotes > * {
+    margin: 0.5rem;
 }

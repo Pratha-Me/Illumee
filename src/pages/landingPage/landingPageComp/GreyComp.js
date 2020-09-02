@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react'
 
 export default class GreyComp extends Component {
@@ -15,3 +16,4 @@ export default class GreyComp extends Component {
         )
     }
 }
+*/
