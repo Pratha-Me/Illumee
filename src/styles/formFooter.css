@@ -60,6 +60,10 @@
     border: 1px solid white ;
 }
 
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
 .formComp .footnotes {
     width: 55%;
     margin: auto;

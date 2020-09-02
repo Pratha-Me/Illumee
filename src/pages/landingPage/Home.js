@@ -12,7 +12,7 @@ import icon3 from '../../images/Icon awesome-plane-departure.png';
 import icon4 from '../../images/Icon ionic-ios-time.png';
 
 import RedRelativeComp from './landingPageComp/RedRelativeComp';
-import FormFooter from '../form/FormFooter';
+import FormFooter from './form/FormFooter';
 
 export default class Home extends Component {
 

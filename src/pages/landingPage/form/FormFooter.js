@@ -31,8 +31,8 @@ const FormFooter = (props) => {
 
             <div className="footnotes">
                 <p>+351 932 080 132 &bull; +1 416 857 1505 INFO@ILLUMEE.LIVE ABOUT ILLUMEE </p>
-                <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "28px" }}></ion-icon>
-                <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "28px" }}></ion-icon>
+                <a href="#" target="_blank"> <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "28px" }}></ion-icon></a>
+                <a href="#" target="_blank"> <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "28px" }}></ion-icon></a>
             </div>
         </div>
     )
