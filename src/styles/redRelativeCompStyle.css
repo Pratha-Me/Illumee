@@ -1,0 +1,20 @@
+.relative-div {
+    position: relative;
+    margin-top: 1rem;
+    height: var(--div-height);
+}
+
+.abs-div {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 45%;
+    height: inherit;
+    object-position: 0% 0%;
+}
+
+.abs-div img {
+    height: auto;
+    width: 95%;
+}

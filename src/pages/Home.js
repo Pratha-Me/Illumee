@@ -9,6 +9,7 @@ import icon3 from '../images/Icon awesome-plane-departure.png';
 import icon4 from '../images/Icon ionic-ios-time.png';
 
 import GreyComp from '../components/landingpage/GreyComp';
+import RedRelativeComp from '../components/landingpage/RedRelativeComp';
 
 export default class Home extends Component {
 
@@ -16,15 +17,23 @@ export default class Home extends Component {
         super(props)
 
         this.state = {
-            dashboard: {
-                image: dashboard,
-                alt: "Dashboard",
-                text: "ILLUMEE is a platform that allows guests to view upcoming talks and search for discussions in specific industries that the guest may be interested in learning.\n\n ILLUMEE is a platform for all experts in different industries. Attendees have access to a wide variety of Live lectures in any industry they can subscribe to, and ILLUMEE brings the experts to guests remotely."
+            greyComp: {
+                image1: dashboard,
+                alt1: "Dashboard",
+                text1: "ILLUMEE is a platform that allows guests to view upcoming talks and search for discussions in specific industries that the guest may be interested in learning.\n\n ILLUMEE is a platform for all experts in different industries. Attendees have access to a wide variety of Live lectures in any industry they can subscribe to, and ILLUMEE brings the experts to guests remotely.",
+
+                image2: img2,
+                alt2: "Quotation",
+                text2: "\"Courage starts with showing up and letting ourselves be seen.\" -- Brene Brown <br></br> <br></br> As the conference devolves we provide our user with a dynamic live chat, where the speaker may interact with the audience, we encourage ou user to connect and share knowledge and expand their network."
             },
-            quotation: {
-                image: img2,
-                alt: "Quotation",
-                text: "\"Courage starts with showing up and letting ourselves be seen.\" -- Brene Brown <br></br> <br></br> As the conference devolves we provide our user with a dynamic live chat, where the speaker may interact with the audience, we encourage ou user to connect and share knowledge and expand their network."
+            redRelativeComp: {
+                image1: conference,
+                alt1: "Conference",
+                text1: "With ILLUMEE, experts don’t require any specialized tech knowledge to create Live lectures; they don’t have to hire tech gurus to do that either. ILLUMEE makes it easy for them to develop and schedule interactive live conferences/lectures from their home or office’s comfort",
+                
+                image2: conference,
+                alt2: "Conference",
+                text2: "As a speaker, we know the importance of leaving the audience with knowledge and perception. With Illumee, we not only provide a location for your lecture/conferences; we also provide you with a storefront. Guests will be able to access the live storefront during the lecture/conference. The lecturer will be able to sell products that live during the talk. Purchase books, products, services being sold during the conference with no lineups or waiting until the end of the event to sell the product. Hosts can now host a live event, and sell products live online during the event."
             }
         }
 
@@ -47,20 +56,8 @@ export default class Home extends Component {
                 <div className="illumee-body">
                     <h1 className="body-heading"> What is ILLUMEE?</h1>
 
-                    <GreyComp image= {this.state.dashboard.image} alt= {this.state.dashboard.alt} text= {this.state.dashboard.text}/>
-
-                    <div className="relative-div">
-                        <div className="red-bg valign">
-                            <p className="body-p">
-                                With ILLUMEE, experts don’t require any specialized tech knowledge to create Live lectures;
-                                they don’t have to hire tech gurus to do that either. ILLUMEE makes it easy for them to develop and
-                                schedule interactive live conferences/lectures from their home or office’s comfort
-                            </p>
-                        </div>
-                        <div className="valign abs-div">
-                            <img src={conference} alt="Live Conference" />
-                        </div>
-                    </div>
+                    <GreyComp image= {this.state.greyComp.image1} alt= {this.state.greyComp.alt1} text= {this.state.greyComp.text1}/>
+                    <RedRelativeComp image={this.state.redRelativeComp.image1} alt= {this.state.redRelativeComp.alt1} text={this.state.redRelativeComp.text1}/>
 
                     <div className="flex-img">
                         <img src={conference} alt="image1" />
@@ -85,23 +82,8 @@ export default class Home extends Component {
                         </p>
                     </div>
 
-                    <GreyComp image= {this.state.quotation.image} alt= {this.state.quotation.alt} text= {this.state.quotation.text}/>
-
-                    <div className="relative-div">
-                        <div className="red-bg valign">
-                            <p className="body-p">
-                                As a speaker, we know the importance of leaving the audience with knowledge and perception. With Illumee,
-                                we not only provide a location for your lecture/conferences; we also provide you with a storefront.
-                                Guests will be able to access the live storefront during the lecture/conference. The lecturer will be able to
-                                sell products that live during the talk. Purchase books, products, services being sold during the conference
-                                with no lineups or waiting until the end of the event to sell the product.
-                                Hosts can now host a live event, and sell products live online during the event.
-                            </p>
-                        </div>
-                        <div className="valign abs-div">
-                            <img src={conference} alt="Live Conference" />
-                        </div>
-                    </div>
+                    <GreyComp image= {this.state.greyComp.image2} alt= {this.state.greyComp.alt2} text= {this.state.greyComp.text2}/>
+                    <RedRelativeComp image={this.state.redRelativeComp.image2} alt= {this.state.redRelativeComp.alt2} text={this.state.redRelativeComp.text2}/>
                 </div>
             </React.Fragment>
         )

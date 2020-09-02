@@ -1,4 +1,6 @@
 @import url("./constant.css");
+@import url("./greyCompStyle.css");
+@import url("./redRelativeCompStyle.css");
 
 *{ 
     box-sizing: border-box;
@@ -111,19 +113,6 @@ div.input-div {
     margin-bottom: 1rem;
 }
 
-.illumee-body .flex-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--div-height);
-    margin-top: 1rem;
-    padding: 1rem 2rem;
-}
-
-.illumee-body .grey-bg{
-    background-color: var(--bg-color-grey);
-}
-
 .body-p {
     color: var(--text-black);
     font-family: var(--font-family-para);
@@ -131,23 +120,6 @@ div.input-div {
     font-weight: 300;
     text-align: left;
     line-height: 2;
-}
-
-.flex-div img {
-    width: 35%;
-    height: 185px;
-    object-fit: cover;
-    object-position: 0% 0%;
-}
-
-.flex-div p {
-    width: 60%;
-}
-
-.relative-div {
-    position: relative;
-    margin-top: 1rem;
-    height: var(--div-height);
 }
 
 .red-bg {
@@ -160,21 +132,6 @@ div.input-div {
     color: var(--text-white);
     padding: 0 2rem;
     width: 65%;
-}
-
-.abs-div {
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    right: 0; 
-    width: 45%;
-    height: inherit;
-    object-position: 0% 0%;
-}
-
-.abs-div img {
-    height: auto;
-    width: 95%;
 }
 
 .flex-img {
@@ -199,7 +156,7 @@ div.input-div {
 
 .red-bg-div p {
     color: var(--text-white);
-    width: 65%;
+    width: 60%;
 }
 
 div.grid-container {
