@@ -98,6 +98,32 @@ div.input-div {
     color: white;
     font-weight: unset;
 }
+
+/* This four styling from here can be separated into its own file if the grey background component in home.js can be separaed into a file */
+.illumee-body .flex-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--div-height);
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+.illumee-body .grey-bg{
+    background-color: var(--bg-color-grey);
+}
+
+.flex-div img {
+    width: 35%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.flex-div p {
+    width: 60%;
+}
+/* -------------------------------------------------------- */
 /* Top section ends */
 
 /* -------------------------------------------------------- */
