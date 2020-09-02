@@ -1,10 +1,11 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
+
 import './styles/style.css';
 import { Router, Switch, Route } from 'react-router-dom';
 import history from './services/history';
-import Home from './components/Home';
+import Home from './pages/Home';
 
 function App() {
   return (
