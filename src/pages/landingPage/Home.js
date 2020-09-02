@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import dashboard from '../images/Dashboard.png';
-import conference from '../images/Conference.png';
-import img2 from '../images/Image2.png';
-import img3 from '../images/Image3.png';
-import icon1 from '../images/Icon awesome-calendar-alt.png';
-import icon2 from '../images/Icon awesome-city.png';
-import icon3 from '../images/Icon awesome-plane-departure.png';
-import icon4 from '../images/Icon ionic-ios-time.png';
+import dashboard from '../../images/Dashboard.png';
+import conference from '../../images/Conference.png';
+import img2 from '../../images/Image2.png';
+import img3 from '../../images/Image3.png';
+import icon1 from '../../images/Icon awesome-calendar-alt.png';
+import icon2 from '../../images/Icon awesome-city.png';
+import icon3 from '../../images/Icon awesome-plane-departure.png';
+import icon4 from '../../images/Icon ionic-ios-time.png';
 
-import GreyComp from '../components/landingpage/GreyComp';
-import RedRelativeComp from '../components/landingpage/RedRelativeComp';
+import GreyComp from './landingPageComp/GreyComp';
+import RedRelativeComp from './landingPageComp/RedRelativeComp';
 
 export default class Home extends Component {
 

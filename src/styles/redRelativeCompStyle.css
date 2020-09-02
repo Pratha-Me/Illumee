@@ -18,3 +18,15 @@
     height: auto;
     width: 95%;
 }
+
+.red-bg {
+    background-color: var(--color-red1);
+    width: 75%;
+    height: inherit;
+}
+
+.red-bg p {
+    color: var(--text-white);
+    padding: 0 2rem;
+    width: 65%;
+}

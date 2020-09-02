@@ -122,18 +122,6 @@ div.input-div {
     line-height: 2;
 }
 
-.red-bg {
-    background-color: var(--color-red1);
-    width: 75%;
-    height: inherit;
-}
-
-.red-bg p {
-    color: var(--text-white);
-    padding: 0 2rem;
-    width: 65%;
-}
-
 .flex-img {
     display: flex;
     justify-content: space-between;

@@ -5,7 +5,7 @@ import React from 'react';
 import './styles/style.css';
 import { Router, Switch, Route } from 'react-router-dom';
 import history from './services/history';
-import Home from './pages/Home';
+import Home from './pages/landingPage/Home';
 
 function App() {
   return (
