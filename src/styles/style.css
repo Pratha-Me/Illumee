@@ -1,5 +1,9 @@
 @import url("./constant.css");
 
+*{ 
+    box-sizing: border-box;
+}
+
 html{
     z-index: -1;
     background-color: black;
@@ -12,6 +16,15 @@ body{
     font-size: var(--font-size-para);
     background-color: white;
 }
+
+/* Aligns items in the vertical axis */
+.valign{
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
 
 /* Top section starts */
 .intro-heading {
@@ -31,7 +44,7 @@ body{
 }
 
 .intro-heading .brand > span {
-    color: var(--text-color-red1);
+    color: var(--color-red1);
 }
 
 .intro-heading .heading {
@@ -63,31 +76,43 @@ div.input-div {
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 30px;
 }
 
 .input-div input {
     font-family: var(--font-family-para);
     width: 240px;
-    height: 22px;
+    height: inherit;
     font-size: 0.75rem;
     padding-left: 1rem;
 }
 
-.intro-heading button {
-    background-color: var(--text-color-red2);
+.input-div button {
+    background-color: var(--color-red2);
     border: none;
     width: 72px;
-    height: 31px;
+    height: inherit;
     color: white;
     font-weight: unset;
 }
 /* Top section ends */
 
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
 /* Body (What is Illumee?) starts */
+.sm-width-p {
+    width: 55%;
+}
+
+.md-width-p {
+    width: 65%;
+}
+
 .illumee-body .body-heading {
     font-family: var(--font-family-para);
     font-weight: normal;
-    color: var(--text-color-red2);
+    color: var(--color-red2);
     text-align: left;
     padding-left: 2rem;
     margin-top: 2.75rem;
@@ -97,24 +122,61 @@ div.input-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3.5rem;
+    padding: 1rem 2rem;
 }
 
-.flex-div{
+.illumee-body .grey-bg{
     background-color: var(--bg-color-grey);
 }
 
-.flex-div .image-resize {
+.flex-div img {
     width: 35%;
     height: 185px;
     object-fit: cover;
     object-position: 0% 0%;
 }
 
-.flex-div .flex-p {
-    width: 55%;
+.body-p {
+    color: var(--text-black);
     font-family: var(--font-family-para);
-    font-weight: lighter;
+    font-size: var(--font-size-para);
+    font-weight: 300;
     text-align: left;
+    line-height: 2;
+}
+
+.relative-div {
+    position: relative;
+    margin-top: 1rem;
+    height: var(--relative-div-height);
+}
+
+.red-bg {
+    background-color: var(--color-red1);
+    width: 75%;
+    height: inherit;
+}
+
+.red-bg p {
+    color: var(--text-white);
+    padding: 0 2rem;
+}
+
+.abs-div {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 45%;
+    height: inherit;
+    object-position: 0% 0%;
+}
+
+.abs-div img {
+    height: auto;
+    width: 95%;
 }
 /* Body (What is Illumee?) ends */
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */

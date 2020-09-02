@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import dashboard from '../images/Dashboard.png';
+import conference from '../images/Conference.png';
 
 export default class Home extends Component {
     render() {
@@ -19,9 +20,9 @@ export default class Home extends Component {
 
                 <div className="illumee-body">
                     <h1 className="body-heading"> What is ILLUMEE?</h1>
-                    <div className="flex-div">
-                        <img className="image-resize" src={dashboard} alt="Dashboard"></img>
-                        <p className="flex-p">
+                    <div className="flex-div grey-bg">
+                        <img src={dashboard} alt="Dashboard"></img>
+                        <p className="body-p sm-width-p">
                             ILLUMEE is a platform that allows guests to view upcoming talks and search for discussions in specific industries
                             that the guest may be interested in learning.
                             <br></br> <br></br>
@@ -33,7 +34,7 @@ export default class Home extends Component {
                             <img className="img-resize"></img>
                         </div>
                         <div className="div-p">
-                            <p className="flex-p"> 
+                            <p className="body-p"> 
                             ILLUMEE is a platform that allows guests to view upcoming talks and search for discussions in specific industries
                             that the guest may be interested in learning.
                             <br></br>
@@ -41,7 +42,21 @@ export default class Home extends Component {
                             lectures in any industry they can subscribe to, and ILLUMEE brings the experts to guests remotely.</p>
                         </div> */}
                     </div>
+                    <div className="relative-div">
+                        <div className="red-bg valign">
+                            <p className="body-p md-width-p">
+                                With ILLUMEE, experts don’t require any specialized tech knowledge to create Live lectures;
+                                they don’t have to hire tech gurus to do that either. ILLUMEE makes it easy for them to develop and
+                                schedule interactive live conferences/lectures from their home or office’s comfort
+                            </p>
+                        </div>
+                        <div className="valign abs-div">
+                            <img src={conference} alt="Live Conference" />
+                        </div>
+
+                    </div>
                 </div>
+
             </React.Fragment>
         )
     }

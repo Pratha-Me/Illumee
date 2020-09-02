@@ -1,15 +1,20 @@
 :root {
     --body-content-width: 70%;
 
+    --relative-div-height: 300px;
+    /* --image-heigth: ; */
+
     --font-size-para: 15px;
     --letter-spacing-val: 20px;
 
     --font-weight-lighter: lighter;
-    --font-family: "BunueloCleanPro";
+    --font-family: 'BunueloCleanPro';
     --font-family-para: 'Roboto', sans-serif;
 
-    --text-color-red1: #E50019;
-    --text-color-red2: #DD0A14;
+    --color-red1: #E50019;
+    --color-red2: #DD0A14;
+    --text-black: #040405;
+    --text-white: #FBFBFB;
 
     --bg-color-grey: #F3F3F3;
 }
