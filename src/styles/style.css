@@ -1,6 +1,7 @@
 @import url("./constant.css");
 @import url("./greyCompStyle.css");
 @import url("./redRelativeCompStyle.css");
+@import url("./formFooter.css");
 
 *{ 
     box-sizing: border-box;
@@ -109,7 +110,7 @@ div.input-div {
     color: var(--color-red2);
     text-align: left;
     padding-left: 2rem;
-    margin-top: 2.75rem;
+    margin-top: 2.25rem;
     margin-bottom: 1rem;
 }
 

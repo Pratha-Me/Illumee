@@ -13,6 +13,7 @@ import icon4 from '../../images/Icon ionic-ios-time.png';
 
 import GreyComp from './landingPageComp/GreyComp';
 import RedRelativeComp from './landingPageComp/RedRelativeComp';
+import FormFooter from '../form/FormFooter';
 
 export default class Home extends Component {
 
@@ -91,6 +92,8 @@ export default class Home extends Component {
 
                     <GreyComp image= {this.state.greyComp.image2} alt= {this.state.greyComp.alt2} text= {this.state.greyComp.text2}/>
                     <RedRelativeComp image={this.state.redRelativeComp.image2} alt= {this.state.redRelativeComp.alt2} text={this.state.redRelativeComp.text2}/>
+                    <FormFooter></FormFooter>
+
                 </div>
             </React.Fragment>
         )
