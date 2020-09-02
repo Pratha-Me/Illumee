@@ -65,7 +65,7 @@ input[type="submit"]:hover {
 }
 
 .formComp .footnotes {
-    width: 50%;
+    width: 525px;
     margin: auto;
     font-family: var(--font-family-para);
     font-size: 0.85rem;
