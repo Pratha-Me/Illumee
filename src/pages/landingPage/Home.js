@@ -21,19 +21,6 @@ export default class Home extends Component {
         super(props)
 
         this.state = {
-            greyComp: {
-                image1: dashboard,
-                alt1: "Dashboard",
-                text1: `ILLUMEE is a platform that allows guests to view upcoming talks and search for discussions in specific industries that the guest may be interested in learning. 
-                <br></br>
-                ILLUMEE is a platform for all experts in different industries. Attendees have access to a wide variety of Live lectures in any industry they can subscribe to, and ILLUMEE brings the experts to guests remotely.`,
-
-                image2: image,
-                alt2: "Quotation",
-                text2: `\"Courage starts with showing up and letting ourselves be seen.\" -- Brene Brown
-                <br></br>
-                As the conference devolves we provide our user with a dynamic live chat, where the speaker may interact with the audience, we encourage ou user to connect and share knowledge and expand their network.`
-            },
             redRelativeComp: {
                 image1: conference,
                 alt1: "Conference",
@@ -64,7 +51,15 @@ export default class Home extends Component {
                 <div className="illumee-body">
                     <h1 className="body-heading"> What is ILLUMEE?</h1>
 
-                    <GreyComp image= {this.state.greyComp.image1} alt= {this.state.greyComp.alt1} text= {this.state.greyComp.text1}/>
+                    <div className="flex-div grey-bg">
+                        <img src={dashboard} alt={"Dashboard"}></img>
+                        <p className="body-p">
+                        ILLUMEE is a platform that allows guests to view upcoming talks and search for discussions in specific industries that the guest may be interested in learning.
+<br></br> <br></br>
+ILLUMEE is a platform for all experts in different industries. Attendees have access to a wide variety of Live lectures in any industry they can subscribe to, and ILLUMEE brings the experts to guests remotely.
+                        </p>
+                    </div>
+
                     <RedRelativeComp image={this.state.redRelativeComp.image1} alt= {this.state.redRelativeComp.alt1} text={this.state.redRelativeComp.text1}/>
 
                     <div className="flex-img">
@@ -90,7 +85,18 @@ export default class Home extends Component {
                         </p>
                     </div>
 
-                    <GreyComp image= {this.state.greyComp.image2} alt= {this.state.greyComp.alt2} text= {this.state.greyComp.text2}/>
+                    <div className="flex-div grey-bg">
+                        <img src={image} alt={"Image"}></img>
+                        <p className="body-p">
+                        "Courage starts with showing up and letting ourselves 
+be seen." -- Brene Brown
+<br></br><br></br>
+As the conference devolves we provide our user with a 
+dynamic live chat, where the speaker may interact with 
+the audience, we encourage ou user to connect and 
+share knowledge and expand their network.
+                        </p>
+                    </div>
                     <RedRelativeComp image={this.state.redRelativeComp.image2} alt= {this.state.redRelativeComp.alt2} text={this.state.redRelativeComp.text2}/>
                     <FormFooter></FormFooter>
 

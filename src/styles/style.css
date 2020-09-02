@@ -42,7 +42,7 @@ body{
     text-align: left;
     color: white;
     margin: 0px auto;
-    padding-top: 1rem;
+    padding-top: 0.75rem;
     padding-left: 3.5rem;
 }
 
@@ -52,7 +52,7 @@ body{
 
 .intro-heading .heading {
     letter-spacing: var(--letter-spacing-val);
-    font-family: var(--font-family);
+    font-family: var(--font-family-para);
     font-weight: var(--font-weight-lighter);
     font-size: 3rem;
     text-align: center;
@@ -63,7 +63,7 @@ body{
 
 .intro-heading p {
     font-family: var(--font-family-para);
-    font-weight: var(--font-weight-lighter);
+    font-weight: 200;
     text-align: center;
     color: white;
     font-size: 0.75rem;
@@ -71,7 +71,7 @@ body{
 
 p.last-p {
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     padding-bottom: 1.5rem;
 }
 
