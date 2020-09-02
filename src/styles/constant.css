@@ -1,7 +1,8 @@
 :root {
     --body-content-width: 70%;
 
-    --relative-div-height: 300px;
+    --div-height: 300px;
+    --icon-height: calc(var(--div-height)/4);
     /* --image-heigth: ; */
 
     --font-size-para: 15px;

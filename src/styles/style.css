@@ -101,14 +101,6 @@ div.input-div {
 /* -------------------------------------------------------- */
 
 /* Body (What is Illumee?) starts */
-.sm-width-p {
-    width: 55%;
-}
-
-.md-width-p {
-    width: 65%;
-}
-
 .illumee-body .body-heading {
     font-family: var(--font-family-para);
     font-weight: normal;
@@ -116,24 +108,20 @@ div.input-div {
     text-align: left;
     padding-left: 2rem;
     margin-top: 2.75rem;
+    margin-bottom: 1rem;
 }
 
 .illumee-body .flex-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: var(--div-height);
+    margin-top: 1rem;
     padding: 1rem 2rem;
 }
 
 .illumee-body .grey-bg{
     background-color: var(--bg-color-grey);
-}
-
-.flex-div img {
-    width: 35%;
-    height: 185px;
-    object-fit: cover;
-    object-position: 0% 0%;
 }
 
 .body-p {
@@ -145,10 +133,21 @@ div.input-div {
     line-height: 2;
 }
 
+.flex-div img {
+    width: 35%;
+    height: 185px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.flex-div p {
+    width: 60%;
+}
+
 .relative-div {
     position: relative;
     margin-top: 1rem;
-    height: var(--relative-div-height);
+    height: var(--div-height);
 }
 
 .red-bg {
@@ -160,6 +159,7 @@ div.input-div {
 .red-bg p {
     color: var(--text-white);
     padding: 0 2rem;
+    width: 65%;
 }
 
 .abs-div {
@@ -175,6 +175,68 @@ div.input-div {
 .abs-div img {
     height: auto;
     width: 95%;
+}
+
+.flex-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.flex-img img {
+    width: 32%;
+}
+
+.red-bg-div {
+    background-color: var(--color-red1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--div-height);
+    padding: 1rem 2rem;
+}
+
+.red-bg-div p {
+    color: var(--text-white);
+    width: 65%;
+}
+
+div.grid-container {
+    width: 35%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    grid-template-areas: 
+    ". a ."
+    "b . c"
+    ". d .";
+}
+
+.img-a{
+    height: var(--icon-height);
+    width: auto;
+    grid-area: a;
+}
+
+.img-b{
+    height: var(--icon-height);
+    width: auto;
+    grid-area: b;
+}
+
+.img-c{
+    height: var(--icon-height);
+    width: auto;
+    grid-area: c;
+}
+
+.img-d{
+    height: var(--icon-height);
+    width: auto;
+    grid-area: d;
 }
 /* Body (What is Illumee?) ends */
 
