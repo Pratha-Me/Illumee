@@ -137,7 +137,7 @@ div.input-div {
 }
 
 .flex-div img {
-    width: 35%;
+    width: 320px;
     height: auto;
     object-fit: contain;
     object-position: center;
