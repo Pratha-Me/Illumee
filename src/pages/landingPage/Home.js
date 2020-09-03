@@ -26,12 +26,12 @@ export default class Home extends Component {
                 text1: "With ILLUMEE, experts don’t require any specialized tech knowledge to create Live lectures; they don’t have to hire tech gurus to do that either. ILLUMEE makes it easy for them to develop and schedule interactive live conferences/lectures from their home or office’s comfort",
 
                 image2: store,
-                alt2: "Conference",
+                alt2: "Store",
                 text2: "As a speaker, we know the importance of leaving the audience with knowledge and perception. With Illumee, we not only provide a location for your lecture/conferences; we also provide you with a storefront. Guests will be able to access the live storefront during the lecture/conference. The lecturer will be able to sell products that live during the talk. Purchase books, products, services being sold during the conference with no lineups or waiting until the end of the event to sell the product. Hosts can now host a live event, and sell products live online during the event."
             }
         }
-
     }
+
     render() {
         return (
             <React.Fragment>
@@ -72,10 +72,10 @@ export default class Home extends Component {
                     <div className="red-bg-div">
                         {/* <img src={img2} alt="Dashboard"></img> */}
                         <div className="grid-container">
-                            <img className="img-a" src={icon4} alt="icon1"></img>
-                            <img className="img-b" src={icon3} alt="icon2"></img>
-                            <img className="img-c" src={icon2} alt="icon3"></img>
-                            <img className="img-d" src={icon1} alt="icon4"></img>
+                            <img className="img-a" src={icon4} alt="icon4"></img>
+                            <img className="img-b" src={icon3} alt="icon3"></img>
+                            <img className="img-c" src={icon2} alt="icon2"></img>
+                            <img className="img-d" src={icon1} alt="icon1"></img>
                         </div>
 
                         <p className="body-p">
