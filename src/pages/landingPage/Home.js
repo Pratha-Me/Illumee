@@ -12,7 +12,7 @@ import icon3 from '../../images/Icon awesome-plane-departure.png';
 import icon4 from '../../images/Icon ionic-ios-time.png';
 
 import RedRelativeComp from './landingPageComp/RedRelativeComp';
-import FormFooter from './form/FormFooter';
+import FormFooter from './landingPageComp/FormFooter';
 
 export default class Home extends Component {
 
@@ -44,7 +44,6 @@ export default class Home extends Component {
                         <input type="email" name="email" placeholder="Enter your email"></input><button> Notify me</button>
                     </div>
                     <p className="last-p">INVESTORS INFORMATION</p>
-
                 </div>
 
                 <div className="illumee-body">
@@ -70,7 +69,6 @@ export default class Home extends Component {
                     </div>
 
                     <div className="red-bg-div">
-                        {/* <img src={img2} alt="Dashboard"></img> */}
                         <div className="grid-container">
                             <img className="img-a" src={icon4} alt="icon4"></img>
                             <img className="img-b" src={icon3} alt="icon3"></img>

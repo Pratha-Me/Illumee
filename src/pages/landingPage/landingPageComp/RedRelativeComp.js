@@ -17,7 +17,6 @@ export default class RedRelativeComp extends Component {
                     <img src={this.props.image} alt={this.props.alt} />
                 </div>
             </div>
-
         )
     }
 }

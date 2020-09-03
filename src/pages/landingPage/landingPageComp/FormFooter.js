@@ -1,11 +1,15 @@
-import React, { useState } from "react"
+import React, { useRef } from "react";
+import { useForm } from "react-hook-form";
 
 const FormFooter = (props) => {
 
-    const [name, setName] = useState(null);
+    const { register, handleSubmit } = useForm();
+    const formRef = useRef(null);
 
-    const handleSubmit = (event) => {
-        console.log(event.target);
+    const handleSubmitForm = (formData) => {
+       console.log("Form", formData);
+       console.log(formRef.current.value); 
+       formRef.current.reset();
     }
 
     return (
@@ -14,18 +18,18 @@ const FormFooter = (props) => {
 
             <div className="form">
                 <h2> INVESTORS INFORMATION</h2>
-                <form onSubmit={handleSubmit} id="form-post">
-                    <input type="text" name="name" id="name" placeholder="NAME"></input>
-                    <input type="email" name="email" id="email" placeholder="EMAIL"></input>
-                    <input type="text" pattern="[0-9]+" name="number" id="number" placeholder="PHONE NUMBER"></input>
-                    <select name="reason" id="reason" required>
+                <form onSubmit={handleSubmit(handleSubmitForm)} id="form-post" ref={formRef}>
+                    <input type="text" name="name" id="name" placeholder="NAME" ref={register}></input>
+                    <input type="email" name="email" id="email" placeholder="EMAIL" ref={register}></input>
+                    <input type="text" pattern="[0-9]+" name="number" id="number" placeholder="PHONE NUMBER" ref={register}></input>
+                    <select name="reason" id="reason" required ref={register}>
                         <option value="" disabled selected hidden>Choose a reason</option>
                         <option value="one"> One</option>
                         <option value="two"> Two</option>
                         <option value="three"> Three</option>
                         <option value="four"> Four</option>
                     </select>
-                    <textarea name="message" id="message" placeholder="YOUR MESSAGE"></textarea>
+                    <textarea name="message" id="message" placeholder="YOUR MESSAGE" ref={register}></textarea>
                     <input type="submit" id="btn" name="button" value="SEND"></input>
                 </form>
             </div>
