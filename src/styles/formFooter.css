@@ -60,6 +60,12 @@
     border: 1px solid white ;
 }
 
+#form-post select > option{
+    font-family: var(--font-family-para);
+    font-weight: 400;
+    color: var(--text-black);
+}
+
 input[type="submit"]:hover {
     cursor: pointer;
 }

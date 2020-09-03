@@ -18,11 +18,12 @@ const FormFooter = (props) => {
                     <input type="text" name="name" id="name" placeholder="NAME"></input>
                     <input type="email" name="email" id="email" placeholder="EMAIL"></input>
                     <input type="text" pattern="[0-9]+" name="number" id="number" placeholder="PHONE NUMBER"></input>
-                    <select name="reason" id="reason">
-                        <option value="one"> one</option>
-                        <option value="two"> two</option>
-                        <option value="three"> three</option>
-                        <option value="four"> four</option>
+                    <select name="reason" id="reason" required>
+                        <option value="" disabled selected hidden>Choose a reason</option>
+                        <option value="one"> One</option>
+                        <option value="two"> Two</option>
+                        <option value="three"> Three</option>
+                        <option value="four"> Four</option>
                     </select>
                     <textarea name="message" id="message" placeholder="YOUR MESSAGE"></textarea>
                     <input type="submit" id="btn" name="button" value="SEND"></input>
