@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { FormPostService } from "../../../services/FormApi";
 
 const FormFooter = (props) => {
+
+    const [focus, setFocus] = useState(false);
 
     const { register, handleSubmit } = useForm();
     const formRef = useRef(null);
@@ -12,9 +14,11 @@ const FormFooter = (props) => {
        console.log("Form", formData);
        
        FormPostService(formData).then((response) => {
+           setFocus(true);
            console.log("Response", response);
        }).catch((err) => {
-           console.log("Err2", err.response.data);
+           setFocus(false);
+        //    console.log("Err", err.response.data);
        });
 
        formRef.current.reset();
@@ -38,7 +42,7 @@ const FormFooter = (props) => {
                         <option value="four"> Four</option>
                     </select>
                     <textarea name="message" id="message" placeholder="YOUR MESSAGE" ref={register}></textarea>
-                    <input type="submit" id="btn" name="button" value="SEND"></input>
+                    <button className={focus ? "btn-focus" : "btn"} disabled={focus} type="submit"> SEND </button>
                 </form>
             </div>
 

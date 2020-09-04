@@ -35,7 +35,7 @@
     font-weight: lighter;
 }
 
-.form form > * {
+.form form > *:not(:last-child) {
 	width: 100%;
 	height: 2.5rem;
 	margin-bottom: 1rem;
@@ -53,20 +53,28 @@
     
 }
 
-.form form > #btn{
+.btn{
     background-color: red;
     width: 20%;
     height: 2rem;
     border: 1px solid white ;
 }
 
+.btn-focus{
+    background-color: green;
+    color: white;
+    width: 20%;
+    height: 2rem;
+    cursor: not-allowed !important;
+}
+
+#form-post button:hover {
+    cursor: pointer;
+}
+
 #form-post select > option{
     font-weight: 400;
     color: var(--text-black);
-}
-
-input[type="submit"]:hover {
-    cursor: pointer;
 }
 
 .formComp .footnotes {
