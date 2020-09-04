@@ -11,11 +11,10 @@ const FormFooter = (props) => {
 
        console.log("Form", formData);
        
-       FormPostService("http://localhost:5000/create", formData).then((response) => {
+       FormPostService(formData).then((response) => {
            console.log("Response", response);
        }).catch((err) => {
-           console.log("Err1",err);
-           console.log("Err2", err.response);
+           console.log("Err2", err.response.data);
        });
 
        formRef.current.reset();
