@@ -10,19 +10,30 @@ const FormFooter = (props) => {
     const formRef = useRef(null);
 
     const handleSubmitForm = (formData) => {
+        setFocus(true);
 
-       console.log("Form", formData);
-       
-       FormPostService(formData).then((response) => {
-           setFocus(true);
-           console.log("Response", response);
-       }).catch((err) => {
-           setFocus(false);
-        //    console.log("Err", err.response.data);
-       });
+        FormPostService(formData).then((response) => {
+            console.log("Response", response);
+            // throw new Error("Custom Error");
+            formRef.current.reset();
+        }).catch((err) => {
+            setFocus(false);
+            console.log(err);
+        })
 
-       formRef.current.reset();
+        /*
+        setTimeout(() => {FormPostService(formData).then((response) => {
+            console.log("Response", response);
+            throw new Error("Custom Error");
+            formRef.current.reset();
+        }).catch((err) => {
+            setFocus(false);
+            console.log(err);
+        })}, 3000);
+        */
     }
+
+    console.log("Focus -", focus);
 
     return (
         <div className="formComp">
