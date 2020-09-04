@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
-
 import { FormPostService } from "../../../services/FormApi";
 
 const FormFooter = (props) => {
@@ -12,11 +11,11 @@ const FormFooter = (props) => {
 
        console.log("Form", formData);
        
-       FormPostService(formData).then((response) => {
+       FormPostService("http://localhost:5000/create", formData).then((response) => {
            console.log("Response", response);
        }).catch((err) => {
            console.log("Err1",err);
-           console.log("Err2", err.response.data);
+           console.log("Err2", err.response);
        });
 
        formRef.current.reset();
