@@ -1,14 +1,24 @@
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
 
+import { FormPostService } from "../../../services/FormApi";
+
 const FormFooter = (props) => {
 
     const { register, handleSubmit } = useForm();
     const formRef = useRef(null);
 
     const handleSubmitForm = (formData) => {
+
        console.log("Form", formData);
-       console.log(formRef.current.value); 
+       
+       FormPostService(formData).then((response) => {
+           console.log("Response", response);
+       }).catch((err) => {
+           console.log("Err1",err);
+           console.log("Err2", err.response.data);
+       });
+
        formRef.current.reset();
     }
 
