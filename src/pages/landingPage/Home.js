@@ -97,6 +97,7 @@ export default class Home extends Component {
                             share knowledge and expand their network.
                         </p>
                     </div>
+
                     <RedRelativeComp image={this.state.redRelativeComp.image2} alt={this.state.redRelativeComp.alt2} text={this.state.redRelativeComp.text2} />
                 </div>
                 

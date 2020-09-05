@@ -1,11 +1,11 @@
 :root {
     --body-content-width: 70%;
 
-    --div-height: 315px;
+    --div-height: 35vh;
     --icon-height: calc(var(--div-height)/4);
 
     --font-size-para: 15px;
-    --letter-spacing-val: 20px;
+    --letter-spacing-val: 1.5vw;
 
     --font-weight-lighter: lighter;
     --font-family: 'BunueloCleanPro';
@@ -17,6 +17,12 @@
     --text-white: #FBFBFB;
 
     --bg-color-grey: #F3F3F3;
+
     font-family: var(--font-family-para);
+    font-size:  18px;
+    color: var(--text-black);
+    font-weight: 300;
+    word-spacing: 2.5px;
+    line-height: 2.2;
 }
 
