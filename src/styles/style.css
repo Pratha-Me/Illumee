@@ -50,7 +50,7 @@ body{
 
 .intro-heading .heading {
 	letter-spacing: var(--letter-spacing-val);
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 3.75vw;
 	text-align: center;
 	color: white;
@@ -61,7 +61,17 @@ body{
 	font-weight: 200;
 	text-align: center;
 	color: white;
-	font-size: 0.8vw;
+	font-size: 1.1vw;
+	word-spacing: .35vw;
+}
+
+.heading-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2.25vw;
 }
 
 div.input-div {
@@ -72,10 +82,10 @@ div.input-div {
 }
 
 .input-div input {
-	width: 23.5vw;
+	width: 20vw;
 	height: inherit;
 	font-size: 0.9vw;
-	padding-left: 1rem;
+	padding-left: 1vw;
 }
 
 .input-div button {

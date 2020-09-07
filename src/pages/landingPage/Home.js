@@ -37,6 +37,7 @@ export default class Home extends Component {
             <React.Fragment>
                 <div className="intro-heading">
                     <h2 className="brand">IILU<span>ME</span>E</h2>
+<div className="heading-flex">
                     <h1 className="heading"> COMING SOON </h1>
 
                     <p>GET NOTIFIED WHEN IT'S READY</p>
@@ -44,6 +45,8 @@ export default class Home extends Component {
                         <input type="email" name="email" placeholder="Enter your email"></input><button> Notify me</button>
                     </div>
                     <p className="last-p">INVESTORS INFORMATION</p>
+
+</div>
                 </div>
 
                 <div className="illumee-body">
