@@ -119,12 +119,12 @@ p.last-p {
 
 /* These four styling from here can be separated into its own file if the grey background component in home.js can be separaed into a file */
 .illumee-body .flex-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--div-height);
-    margin-top: 1rem;
-    padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: var(--div-height);
+	margin-top: 1vw;
+	padding: 1vw 3vw;
 }
 
 .illumee-body .grey-bg{
@@ -139,7 +139,8 @@ p.last-p {
 }
 
 .flex-div p {
-    width: 60%;
+	width: 60%;
+	margin-right: 3vw;
 }
 /* -------------------------------------------------------- */
 
@@ -155,17 +156,18 @@ p.last-p {
 }
 
 .red-bg-div {
-    background-color: var(--color-red1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--div-height);
-    padding: 1rem 2rem;
+	background-color: var(--color-red1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: var(--div-height);
+	padding: 1vw 3vw;
 }
 
 .red-bg-div p {
-    color: var(--text-white);
-    width: 60%;
+	color: var(--text-white);
+	width: 60%;
+	margin-right: 3vw;
 }
 
 div.grid-container {

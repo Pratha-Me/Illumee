@@ -59,12 +59,12 @@ const FormFooter = (props) => {
 
             <div className="footnotes">
                 <div className="footnotes-p">
-                <p>+351 932 080 132 &bull; +1 416 857 1505 </p> <p>INFO@ILLUMEE.LIVE</p> <p> ABOUT ILLUMEE </p>
+                <p>+351 932 080 132 </p> <p> &bull; </p> <p> +1 416 857 1505 </p> <p>INFO@ILLUMEE.LIVE</p> <p> ABOUT ILLUMEE </p>
+                <a href="#" target="_blank"> <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
+                <a href="#" target="_blank"> <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
                 </div>
-                <div>
-                <a href="#" target="_blank"> <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "28px" }}></ion-icon></a>
-                <a href="#" target="_blank"> <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "28px" }}></ion-icon></a>
-                </div>
+                {/* <div>
+                </div> */}
             </div>
         </div>
     )

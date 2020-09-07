@@ -93,8 +93,8 @@
     align-items: center;
 }
 
-.footnotes-p > p{
-    padding: 0 0.75vw;
+.footnotes-p > *{
+    padding: 0 0.5vw;
 }
 
 .footnotes > p {
