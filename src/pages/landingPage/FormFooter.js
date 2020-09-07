@@ -10,10 +10,7 @@ const FormFooter = (props) => {
     const formRef = useRef(null);
 
     const handleSubmitForm = (formData) => {
-        console.log("Form", formData);
-        
         FormPostService(formData).then((response) => {
-            console.log(response);
             setFocus(true);
             formRef.current.reset();
             alert("Please check your email")
