@@ -29,19 +29,19 @@ body{
 
 /* Top section starts */
 .intro-heading {
-    background-image: url('../images/Group\ 991.png');
-    background-size: contain;
-    height: 17vw;
+    background-image: url('../images/Group\ 995.png');
+    background-size: cover;
+    height: 18vw;
     line-height: 1;
 }
 
 .intro-heading .brand {
-    font-weight: var(--font-weight-lighter);
-    font-size: 3.5rem;
-    text-align: left;
-    color: white;
-    margin: 0px auto;
-    padding-left: 3.5rem;
+	font-weight: var(--font-weight-lighter);
+	font-size: 3.5vw;
+	text-align: left;
+	color: white;
+	margin: 0px auto;
+	padding-left: 2vw;
 }
 
 .intro-heading .brand > span {
@@ -49,50 +49,48 @@ body{
 }
 
 .intro-heading .heading {
-    letter-spacing: var(--letter-spacing-val);
-    font-weight: 300;
-    font-size: 3.5rem;
-    text-align: center;
-    color: white;
-    margin: 0;
+	letter-spacing: var(--letter-spacing-val);
+	font-weight: 400;
+	font-size: 3.75vw;
+	text-align: center;
+	color: white;
+	margin: 0;
 }
 
 .intro-heading p {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
+	font-weight: 200;
+	text-align: center;
+	color: white;
+	font-size: 0.8vw;
+}
+
+div.input-div {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 2vw;
+}
+
+.input-div input {
+	width: 23.5vw;
+	height: inherit;
+	font-size: 0.9vw;
+	padding-left: 1rem;
+}
+
+.input-div button {
+	background-color: var(--color-red2);
+	font-size: 0.8vw;
+	border: none;
+	width: 6vw;
+	height: inherit;
+	color: white;
+	font-weight: 200;
 }
 
 p.last-p {
     font-weight: 400;
     padding-bottom: 1.5rem;
-}
-
-div.input-div {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 35px;
-}
-
-.input-div input {
-    font-family: var(--font-family-para);
-    width: 20vw;
-    height: inherit;
-    font-size: 1rem;
-    padding-left: 1rem;
-}
-
-.input-div button {
-    background-color: var(--color-red2);
-    font-family: var(--font-family-para);
-    font-size: 1rem;
-    border: none;
-    width: 5vw;
-    height: inherit;
-    color: white;
-    font-weight: 200;
 }
 /* Top section ends */
 

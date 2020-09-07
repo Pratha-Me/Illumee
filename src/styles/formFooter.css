@@ -1,6 +1,6 @@
 .formComp {
     background-image: url("../images/Group\ 992.png");
-    background-size: contain;
+    background-size: cover;
     padding-bottom: 1rem;
 }
 
@@ -41,7 +41,7 @@
 	margin-bottom: 1rem;
 	font-family: var(--font-family-para);
 	font-weight: 200;
-	font-size: 1rem;
+	font-size: 1.15vw;
 	color: var(--text-white);
 	border-style: none;
 	border-bottom: 1px solid whitesmoke;
@@ -57,6 +57,7 @@
     background-color: red;
     width: 20%;
     height: 2rem;
+    font-size: 1.15vw;
     border: 1px solid white ;
 }
 
