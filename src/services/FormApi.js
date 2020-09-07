@@ -5,7 +5,7 @@ const baseUrl = "http://localhost:5000/";
 const FormPostService = (data) => {
     return axios({
         method: 'POST',
-        url: baseUrl + 'contact/create',
+        url: baseUrl + 'email/send-mail',
         data: data
     });
 };
