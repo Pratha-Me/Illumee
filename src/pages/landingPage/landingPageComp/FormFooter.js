@@ -13,27 +13,13 @@ const FormFooter = (props) => {
         setFocus(true);
 
         FormPostService(formData).then((response) => {
-            console.log("Response", response);
-            // throw new Error("Custom Error");
             formRef.current.reset();
+            alert("Please check you email")
         }).catch((err) => {
             setFocus(false);
             console.log(err);
         })
-
-        /*
-        setTimeout(() => {FormPostService(formData).then((response) => {
-            console.log("Response", response);
-            throw new Error("Custom Error");
-            formRef.current.reset();
-        }).catch((err) => {
-            setFocus(false);
-            console.log(err);
-        })}, 3000);
-        */
     }
-
-    console.log("Focus -", focus);
 
     return (
         <div className="formComp">
