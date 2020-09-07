@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { FormPostService } from "../../../services/FormApi";
+import { FormPostService } from "../../services/FormApi";
 
 const FormFooter = (props) => {
 
@@ -10,11 +10,11 @@ const FormFooter = (props) => {
     const formRef = useRef(null);
 
     const handleSubmitForm = (formData) => {
-        setFocus(true);
-
         FormPostService(formData).then((response) => {
+            console.log(response.data);
+            setFocus(true);
             formRef.current.reset();
-            alert("Please check you email")
+            alert("Please check your email")
         }).catch((err) => {
             setFocus(false);
             console.log(err);
@@ -45,12 +45,10 @@ const FormFooter = (props) => {
 
             <div className="footnotes">
                 <div className="footnotes-p">
-                <p>+351 932 080 132 </p> <p> &bull; </p> <p> +1 416 857 1505 </p> <p>INFO@ILLUMEE.LIVE</p> <p> ABOUT ILLUMEE </p>
-                <a href="#" target="_blank"> <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
-                <a href="#" target="_blank"> <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
+                    <p>+351 932 080 132 </p> <p> &bull; </p> <p> +1 416 857 1505 </p> <p>INFO@ILLUMEE.LIVE</p> <p> ABOUT ILLUMEE </p>
+                    <a href="#" target="_blank"> <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
+                    <a href="#" target="_blank"> <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
                 </div>
-                {/* <div>
-                </div> */}
             </div>
         </div>
     )

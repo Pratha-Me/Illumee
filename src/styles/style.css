@@ -31,7 +31,7 @@ body{
 .intro-heading {
     background-image: url('../images/Group\ 995.png');
     background-size: cover;
-    height: 18vw;
+    height: 16.25vw;
     line-height: 1;
 }
 
@@ -51,7 +51,7 @@ body{
 .intro-heading .heading {
 	letter-spacing: var(--letter-spacing-val);
 	font-weight: 300;
-	font-size: 3.75vw;
+	font-size: 2vw;
 	text-align: center;
 	color: white;
 	margin: 0;
@@ -100,7 +100,6 @@ div.input-div {
 
 p.last-p {
     font-weight: 400;
-    padding-bottom: 1.5rem;
 }
 /* Top section ends */
 
