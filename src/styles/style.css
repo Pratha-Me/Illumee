@@ -37,11 +37,11 @@ body{
 
 .intro-heading .brand {
 	font-weight: var(--font-weight-lighter);
-	font-size: 3.5vw;
+	font-size: 2.75vw;
 	text-align: left;
 	color: white;
 	margin: 0px auto;
-	padding-left: 2vw;
+    padding: 1vw 2vw 0;
 }
 
 .intro-heading .brand > span {
@@ -51,7 +51,7 @@ body{
 .intro-heading .heading {
 	letter-spacing: var(--letter-spacing-val);
 	font-weight: 300;
-	font-size: 2vw;
+	font-size: 3.5vw;
 	text-align: center;
 	color: white;
 	margin: 0;
@@ -71,7 +71,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 2.25vw;
+    top: 0.5vw;
 }
 
 div.input-div {
