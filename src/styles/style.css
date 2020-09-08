@@ -106,6 +106,10 @@ div.input-div {
 	font-weight: 200;
 }
 
+.notifyMe > .btn:hover{
+    cursor: pointer;
+}
+
 .notifyMe > .btn-notified {
     background-color: green;
     background-image: url('../images/checkmark-32.png');

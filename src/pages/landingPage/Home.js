@@ -17,7 +17,6 @@ import FormFooter from "./FormFooter";
 import { FormPostService } from "../../services/FormApi";
 
 const Home = (props) => {
-
   const [redRelativeComp, setRedRelativeComp] = useState({
     image1: conference,
     alt1: "Conference",
@@ -30,21 +29,25 @@ const Home = (props) => {
       "As a speaker, we know the importance of leaving the audience with knowledge and perception. With Illumee, we not only provide a location for your lecture/conferences; we also provide you with a storefront. Guests will be able to access the live storefront during the lecture/conference. The lecturer will be able to sell products that live during the talk. Purchase books, products, services being sold during the conference with no lineups or waiting until the end of the event to sell the product. Hosts can now host a live event, and sell products live online during the event.",
   });
   const [focus, setFocus] = useState(false);
-  const notifyRef = useRef(null); 
+  const [btnDisabled, setBtnDisabled] = useState(false);
+  const notifyRef = useRef(null);
   const { register, handleSubmit } = useForm();
 
   const handleNotify = (formData) => {
     setFocus(true);
 
-    FormPostService(formData).then((response) => {
-      console.log("Notify me", formData);
-        if (!focus) setFocus(true);
+    FormPostService(formData)
+      .then((response) => {
+        console.log("Notify me", formData);
+        setFocus(false);
+        setBtnDisabled(true);
         notifyRef.current.reset();
-    }).catch((err) => {
+      })
+      .catch((err) => {
         setFocus(false);
         console.log(err);
-    });
-  }
+      });
+  };
 
   return (
     <React.Fragment>
@@ -57,14 +60,24 @@ const Home = (props) => {
 
           <p>GET NOTIFIED WHEN IT'S READY</p>
           <div className="input-div">
-            <form className="notifyMe" onSubmit={handleSubmit(handleNotify)} ref={notifyRef}>
+            <form
+              className="notifyMe"
+              onSubmit={handleSubmit(handleNotify)}
+              ref={notifyRef}
+            >
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email"
                 ref={register}
               ></input>
-              <button className={focus ? "btn-notified" : "btn"} disabled={focus} type="submit">{ focus ? null : "Notify me" }</button>
+              <button
+                className={focus ? "btn-notified" : "btn"}
+                disabled={btnDisabled}
+                type="submit"
+              >
+                {focus ? null : "Notify me"}
+              </button>
             </form>
           </div>
           <p className="last-p">INVESTORS INFORMATION</p>
