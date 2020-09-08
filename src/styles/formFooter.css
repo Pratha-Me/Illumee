@@ -52,18 +52,24 @@
 }
 
 .btn{
-    background-color: red;
+    background-color: var(--color-red2);
+    color: white;
     width: 20%;
-    height: 2rem;
+    height: 2vw;
     font-size: 1.15vw;
     border: 1px solid white ;
 }
 
 .btn-focus{
     background-color: green;
+    background-image: url('../images/checkmark-32.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 0.75vw;
     color: white;
     width: 20%;
-    height: 2rem;
+    height: 2vw;
     font-size: 1.15vw;
     cursor: not-allowed !important;
 }

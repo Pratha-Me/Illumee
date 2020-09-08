@@ -24,6 +24,10 @@ body{
     align-items: center;
 }
 
+p > span {
+    margin-top: 3vw;
+}
+
 /* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
 
@@ -81,25 +85,41 @@ div.input-div {
 	height: 2vw;
 }
 
-.input-div input {
+.notifyMe {
+    height: inherit;
+}
+
+.notifyMe > input {
 	width: 20vw;
 	height: inherit;
 	font-size: 0.9vw;
 	padding-left: 1vw;
 }
 
-.input-div button {
+.notifyMe > .btn {
 	background-color: var(--color-red2);
+	font-size: 0.8vw;
+	border: none;
+    width: 6vw;
+	height: inherit;
+	color: white;
+	font-weight: 200;
+}
+
+.notifyMe > .btn-notified {
+    background-color: green;
+    background-image: url('../images/checkmark-32.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 0.75vw;
 	font-size: 0.8vw;
 	border: none;
 	width: 6vw;
 	height: inherit;
 	color: white;
 	font-weight: 200;
-}
-
-p.last-p {
-    font-weight: 400;
+    cursor: not-allowed !important;
 }
 /* Top section ends */
 
@@ -116,7 +136,11 @@ p.last-p {
     margin-bottom: 1rem;
 }
 
-/* These four styling from here can be separated into its own file if the grey background component in home.js can be separaed into a file */
+/* These styling from here can be separated into its own file if the grey background component in home.js can be separaed into a file */
+.illumee-body .grey-bg{
+    background-color: var(--bg-color-grey);
+}
+
 .illumee-body .flex-div {
 	display: flex;
 	justify-content: space-between;
@@ -126,19 +150,23 @@ p.last-p {
 	padding: 1vw 3vw;
 }
 
-.illumee-body .grey-bg{
-    background-color: var(--bg-color-grey);
+.flex-div > div {
+    width: 60%;
 }
 
 .flex-div img {
-    width: 30%;
+    width: 35%;
     height: auto;
     object-fit: contain;
     object-position: center;
 }
 
+.flex-div .shadow {
+    box-shadow: 7px 7px 20px #888888;
+}
+
 .flex-div p {
-	width: 60%;
+	/* width: 60%; */
 	margin-right: 3vw;
 }
 /* -------------------------------------------------------- */

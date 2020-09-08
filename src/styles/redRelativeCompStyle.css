@@ -14,7 +14,7 @@
 }
 
 .abs-div img {
-    height: 85%;
+    height: 81%;
     width: auto;
 }
 
@@ -27,5 +27,5 @@
 .red-bg p {
 	color: var(--text-white);
 	padding-left: 3vw;
-	width: 65%;
+	width: 70%;
 }

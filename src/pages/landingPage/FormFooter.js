@@ -5,20 +5,20 @@ import { FormPostService } from "../../services/FormApi";
 const FormFooter = (props) => {
 
     const [focus, setFocus] = useState(false);
-
-    const { register, handleSubmit } = useForm();
     const formRef = useRef(null);
+    const { register, handleSubmit } = useForm();
 
     const handleSubmitForm = (formData) => {
+        setFocus(true);
+
         FormPostService(formData).then((response) => {
-            setFocus(true);
+            if (!focus) setFocus(true);
             formRef.current.reset();
-            alert("Please check your email")
         }).catch((err) => {
             setFocus(false);
             console.log(err);
-        })
-    }
+        });
+    };
 
     return (
         <div className="formComp">
@@ -32,21 +32,21 @@ const FormFooter = (props) => {
                     <input type="text" pattern="[0-9]+" name="number" id="number" placeholder="PHONE NUMBER" ref={register}></input>
                     <select name="reason" id="reason" required ref={register}>
                         <option value="" disabled selected hidden>Choose a reason</option>
-                        <option value="one"> One</option>
-                        <option value="two"> Two</option>
-                        <option value="three"> Three</option>
-                        <option value="four"> Four</option>
+                        <option value="Information Request"> Information Request</option>
+                        <option value="Investment"> Investment</option>
+                        <option value="Career"> Career</option>
                     </select>
                     <textarea name="message" id="message" placeholder="YOUR MESSAGE" ref={register}></textarea>
-                    <button className={focus ? "btn-focus" : "btn"} disabled={focus} type="submit"> SEND </button>
+                    <button className={focus ? "btn-focus" : "btn"} disabled={focus} type="submit"> { focus ? null : "SEND" } </button>
                 </form>
             </div>
 
             <div className="footnotes">
                 <div className="footnotes-p">
                     <p>+351 932 080 132 </p> <p> &bull; </p> <p> +1 416 857 1505 </p> <p>INFO@ILLUMEE.LIVE</p> <p> ABOUT ILLUMEE </p>
-                    <a href="#" target="_blank"> <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
-                    <a href="#" target="_blank"> <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
+                    <a href="https://www.linkedin.com/company/illumee/" target="_blank"> <ion-icon name="logo-linkedin" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
+                    <a href="https://www.facebook.com/illumee.live" target="_blank"> <ion-icon name="logo-facebook" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
+                    <a href="https://www.instagram.com/illumee.live" target="_blank"> <ion-icon name="logo-instagram" style={{ color: "white", fontSize: "2vw" }}></ion-icon></a>
                 </div>
             </div>
         </div>
