@@ -37,6 +37,7 @@ const Home = (props) => {
     setFocus(true);
 
     FormPostService(formData).then((response) => {
+      console.log("Notify me", formData);
         if (!focus) setFocus(true);
         notifyRef.current.reset();
     }).catch((err) => {
@@ -63,7 +64,7 @@ const Home = (props) => {
                 placeholder="Enter your email"
                 ref={register}
               ></input>
-              <button className={focus ? "btn-notified" : "btn"} type="submit">{ focus ? null : "Notify me" }</button>
+              <button className={focus ? "btn-notified" : "btn"} disabled={focus} type="submit">{ focus ? null : "Notify me" }</button>
             </form>
           </div>
           <p className="last-p">INVESTORS INFORMATION</p>
