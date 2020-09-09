@@ -35,15 +35,15 @@ const Home = (props) => {
 
   const handleNotify = (formData) => {
     setFocus(true);
+    setBtnDisabled(true);
 
     FormPostService(formData)
       .then((response) => {
-        console.log("Notify me", formData);
         setFocus(false);
-        setBtnDisabled(true);
         notifyRef.current.reset();
       })
       .catch((err) => {
+        setBtnDisabled(false);
         setFocus(false);
         console.log(err);
       });

@@ -10,15 +10,16 @@ const FormFooter = (props) => {
 
   const handleSubmitForm = (formData) => {
     setFocus(true);
+    setBtnDisabled(true);
 
     FormPostService(formData)
       .then((response) => {
         setFocus(false);
-        setBtnDisabled(true);
         formRef.current.reset();
       })
       .catch((err) => {
         setFocus(false);
+        setBtnDisabled(false);
         console.log(err);
       });
   };
