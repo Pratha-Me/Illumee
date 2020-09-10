@@ -25,8 +25,7 @@ const FormFooter = (props) => {
   return (
     <div className="formComp">
       <h1>
-        {" "}
-        ILLU<span>ME</span>E{" "}
+        ILLU<span>ME</span>E
       </h1>
 
       <div className="form">
@@ -84,8 +83,7 @@ const FormFooter = (props) => {
             disabled={btnDisabled}
             type="submit"
           >
-            {" "}
-            {focus ? null : "SEND"}{" "}
+            {focus ? null : "SEND"}
           </button>
         </form>
       </div>
@@ -95,21 +93,18 @@ const FormFooter = (props) => {
           <p>+351 932 080 132 </p> <p> &bull; </p> <p> +1 416 857 1505 </p>{" "}
           <p>INFO@ILLUMEE.LIVE</p> <p> ABOUT ILLUMEE </p>
           <a href="https://www.linkedin.com/company/illumee/" target="_blank">
-            {" "}
             <ion-icon
               name="logo-linkedin"
               style={{ color: "white", fontSize: "2vw" }}
             ></ion-icon>
           </a>
           <a href="https://www.facebook.com/illumee.live" target="_blank">
-            {" "}
             <ion-icon
               name="logo-facebook"
               style={{ color: "white", fontSize: "2vw" }}
             ></ion-icon>
           </a>
           <a href="https://www.instagram.com/illumee.live" target="_blank">
-            {" "}
             <ion-icon
               name="logo-instagram"
               style={{ color: "white", fontSize: "2vw" }}

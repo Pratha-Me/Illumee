@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-// const baseUrl = process.env.REACT_APP_LIVESERVER;
-const baseUrl = 'http://localhost:5000/'
+const baseUrl = process.env.REACT_APP_LIVESERVER;
 
 const FormPostService = (data) => {
     return axios({
