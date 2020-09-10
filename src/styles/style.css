@@ -6,16 +6,26 @@
     box-sizing: border-box;
 }
 
-html{
-    z-index: -1;
-    background-color: black;
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    background: rgb(0, 0, 0) none repeat scroll 0% 0%;
+    position: relative;
 }
 
-body{
-    margin: 0px auto;
-    padding: 0px;
-    width: var(--body-content-width);
+body > * {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 15%;
+}
+
+.App {
     background-color: white;
+    width: 70vw;
+    margin: auto;
+    overflow: auto;
 }
 
 /* Aligns items in the vertical axis */
@@ -79,13 +89,14 @@ p > span {
 }
 
 div.input-div {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	height: 2vw;
+    height: 2vw;
+    width: auto;
 }
 
 .notifyMe {
+	display: flex;
+	justify-content: center;
+	align-content: center;
     height: inherit;
 }
 
@@ -93,7 +104,8 @@ div.input-div {
 	width: 20vw;
 	height: inherit;
 	font-size: 0.9vw;
-	padding-left: 1vw;
+    padding: 0 0 0 1vw;
+    display: inline-block;
 }
 
 .notifyMe > .btn {
@@ -115,14 +127,12 @@ div.input-div {
     background-image: url('../images/checkmark-32.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    padding-top: 0.75vw;
-	font-size: 0.8vw;
+    background-size: 1.25vw auto;
+    display: inline-block;
 	border: none;
 	width: 6vw;
 	height: inherit;
 	color: white;
-	font-weight: 200;
     cursor: not-allowed !important;
 }
 /* Top section ends */

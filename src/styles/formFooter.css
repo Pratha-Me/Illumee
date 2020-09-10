@@ -65,8 +65,8 @@
     background-image: url('../images/checkmark-32.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    padding-top: 0.75vw;
+    background-size: 1.25vw auto;
+    /* padding-top: 0.75vw; */
     color: white;
     width: 20%;
     height: 2vw;

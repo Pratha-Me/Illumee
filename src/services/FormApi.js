@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseUrl = "http://localhost:5000/";
+// const baseUrl = process.env.REACT_APP_LIVESERVER;
+const baseUrl = 'http://localhost:5000/'
 
 const FormPostService = (data) => {
     return axios({
@@ -10,4 +11,13 @@ const FormPostService = (data) => {
     });
 };
 
-export { FormPostService };
+const FormDataPostService = (data)=> {
+    return axios({
+        method: 'POST',
+        url: baseUrl + 'contact/create',
+        data: data
+    })
+    
+}
+
+export { FormPostService, FormDataPostService };

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { FormPostService } from "../../services/FormApi";
+import { FormPostService, FormDataPostService } from "../../services/FormApi";
 
 const FormFooter = (props) => {
   const [focus, setFocus] = useState(false);
@@ -12,16 +12,14 @@ const FormFooter = (props) => {
     setFocus(true);
     setBtnDisabled(true);
 
-    FormPostService(formData)
-      .then((response) => {
+    Promise.all([FormPostService(formData), FormDataPostService(formData)]).then((responses) => {
         setFocus(false);
         formRef.current.reset();
-      })
-      .catch((err) => {
+    }).catch((err) => {
         setFocus(false);
         setBtnDisabled(false);
         console.log(err);
-      });
+    });
   };
 
   return (
@@ -51,6 +49,13 @@ const FormFooter = (props) => {
             id="email"
             placeholder="EMAIL"
             ref={register}
+          ></input>
+          <input
+          type="text"
+          name="country"
+          id="country"
+          placeholder="COUNTRY"
+          ref={register}
           ></input>
           <input
             type="text"
