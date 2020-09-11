@@ -177,14 +177,14 @@ div.input-div {
 }
 
 .flex-div img {
-    width: 35%;
+    width: 34.5%;
     height: auto;
     object-fit: contain;
     object-position: center;
 }
 
 .flex-div .shadow {
-    box-shadow: 8px 8px 15px #888888;
+    box-shadow: 8px 8px 15px 1px #888888;
 }
 
 .flex-div p {
