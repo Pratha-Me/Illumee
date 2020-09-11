@@ -69,6 +69,7 @@ const Home = (props) => {
                 type="email"
                 name="email"
                 placeholder="Enter your email"
+                required
                 ref={register}
               ></input>
               <button
@@ -136,11 +137,11 @@ const Home = (props) => {
         </div>
 
         <div className="flex-div grey-bg">
-          <img src={image} alt={"Image"}></img>
-          <div>
-            <p className="body-p">
-              "Courage starts with showing up and letting ourselves be seen." --
-              Brene Brown
+          <img className="custom-img" src={image} alt={"Image"}></img>
+          <div className="flex-p-cont">
+            <p>
+              "Courage starts with showing up and letting ourselves be seen." 
+              <br></br>-- Brene Brown
             </p>
             <p>
               As the conference devolves we provide our user with a dynamic live

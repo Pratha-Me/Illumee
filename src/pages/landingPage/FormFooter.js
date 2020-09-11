@@ -1,8 +1,12 @@
 import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { FormPostService, FormDataPostService } from "../../services/FormApi";
+import PhoneInput from "react-phone-input-2";
+import 'react-phone-input-2/lib/style.css'
 
 const FormFooter = (props) => {
+
+  const [phone, setPhone] = useState(null);
   const [focus, setFocus] = useState(false);
   const [btnDisabled, setBtnDisabled] = useState(false);
   const formRef = useRef(null);
@@ -12,13 +16,17 @@ const FormFooter = (props) => {
     setFocus(true);
     setBtnDisabled(true);
 
+    formData = {...formData, tel: phone}
+
     Promise.all([FormPostService(formData), FormDataPostService(formData)]).then((responses) => {
-        setFocus(false);
-        formRef.current.reset();
+      setFocus(false);
+      setPhone(null);
+      formRef.current.reset();
+
     }).catch((err) => {
-        setFocus(false);
-        setBtnDisabled(false);
-        console.log(err);
+      setFocus(false);
+      setBtnDisabled(false);
+      console.log(err);
     });
   };
 
@@ -47,24 +55,20 @@ const FormFooter = (props) => {
             name="email"
             id="email"
             placeholder="EMAIL"
+            required
             ref={register}
-          ></input>
-          <input
-          type="text"
-          name="country"
-          id="country"
-          placeholder="COUNTRY"
-          ref={register}
           ></input>
           <input
             type="text"
-            pattern="[0-9]+"
-            name="number"
-            id="number"
-            placeholder="PHONE NUMBER"
+            name="country"
+            id="country"
+            placeholder="COUNTRY"
             ref={register}
           ></input>
-          <select name="reason" id="reason" required ref={register}>
+          <div className="phone">
+          <PhoneInput country={'us'} ref={register} value={phone} onChange={(phone) => setPhone(phone)}/>
+          </div>
+          <select name="reason" id="reason" ref={register}>
             <option value="" disabled selected hidden>
               Choose a reason
             </option>
