@@ -16,7 +16,7 @@ const FormFooter = (props) => {
     setFocus(true);
     setBtnDisabled(true);
 
-    formData = {...formData, tel: phone}
+    formData = { ...formData, tel: phone }
 
     Promise.all([FormPostService(formData), FormDataPostService(formData)]).then((responses) => {
       setFocus(false);
@@ -66,7 +66,7 @@ const FormFooter = (props) => {
             ref={register}
           ></input>
           <div className="phone">
-          <PhoneInput country={'us'} ref={register} placeholder={"PHONE NUMBER"} value={phone} onChange={(phone) => setPhone(phone)}/>
+            <PhoneInput country={'us'} ref={register} placeholder={"PHONE NUMBER"} value={phone} onChange={(phone) => setPhone(phone)} />
           </div>
           <select name="reason" id="reason" ref={register}>
             <option value="" disabled selected hidden>
